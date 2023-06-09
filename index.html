@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Tomorrow:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/67aa33abf6.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="./Cyberpunk_2077_favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>CyberPunk Password Generator</title>
+</head>
+<body>
+  <header class="pg-header container">
+    <h1 class="pg-title">PASSWORD GENERATOR</h1>
+  </header>
+
+  <main class="pg-main container">
+    <section class="generate-password-sc">
+      <div class="result-content">
+        <div class="result-output">
+          <input type="text" name="result" id="result">
+          <button class="retry-btn">
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+        </div>
+
+        <button class="copy-btn">
+          <span class="btn-text">COPY PASSWORD_</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="controls">
+        <div class="password-length">
+          <span class="length-span">16</span>
+          <input type="range" name="password-length" id="password-length" min="1" max="30" step="1">
+        </div>
+
+        <div class="checkboxes-container">
+          <div class="checkbox">
+            <input type="checkbox" checked="true" name="uppercase" id="uppercase-control">
+            <label for="uppercase-control">
+              Uppercase letters
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="lowercase" id="lowercase-control">
+            <label for="lowercase-control">
+              Lowercase letters
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" checked="true" name="numbers" id="numbers-control">
+            <label for="numbers-control">
+              Numbers
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="symbols" id="symbols-control">
+            <label for="symbols-control">
+              Symbols
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="password-history-sc">
+      <h2 class="history-title">PASSWORD HISTORY</h2>
+
+      <ul class="history-list">
+      </ul>
+
+      <button class="clear-history-btn">Clear history</button>
+    </section>
+
+    <span class="copy-sucess">
+      Copied to Clipboard!
+    </span>
+  </main>
+
+  <footer class="pg-footer">
+    <h3 class="author-text">Made by GABRIEL TELES</h3>
+  </footer>
+</body>
+</html>
